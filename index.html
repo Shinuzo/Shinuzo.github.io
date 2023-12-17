@@ -1,35 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
     <title>CV Website WebSys | Icejan De Perio</title>
 </head>
-
 <body>
-
     <div class="navbar">
         <h2>Han</h2>
         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Skills</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">About</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="#about">About</a></li>
         </ul>
-        <button class="hire-btn">Download Resume</button>
+        <style>
+            .hire-btn {
+              color: inherit;
+              text-decoration: none;
+            }
+          </style>
+        <a class="hire-btn" href="assets/IcejanDePerioResume.pdf" download="IcejanDePerioResume.pdf">Download Resume</a>
     </div>
-
-    <div class="main">
+    <div id="home" class="main">
         <h4>Hi, I Am <span>Icejan De Perio</span> 👋</h4>
         <p class="title">2nd Year College IT Student</p>
         <p class="subtitle">I Design And Code Beautifully Simple Things And I Love What I Doing!</p>
         <img src="assets/logo.png">
     </div>
-
     <div class="guarantee">
         <div class="item">
             <div class="icon">
@@ -62,22 +63,17 @@
             <i class='bx bx-chevron-right'></i>
         </div>
     </div>
-
     <h5 class="seprator">Who I Am</h5>
-
-    <div class="about">
+    <div id="about" class="about">
         <img src="assets/image.png">
         <div class="info">
             <h3>About Me</h3>
             <p>Hello! I'm Icejan De Perio, a second-year college IT student driven by a deep passion for learning and excelling in the world of technology. My coursework has equipped me with a strong foundation in programming, systems analysis, and network administration. Beyond the classroom, I actively seek opportunities to apply my skills in real-world settings, collaborating effectively with teams to address complex challenges. With a commitment to excellence and a keen eye for emerging trends, I am poised to contribute my enthusiasm and technical expertise to innovative IT projects. I look forward to connecting with like-minded individuals who share a dedication to pushing the boundaries of technology.
             </p>
-            <button class="hire-btn">Hire Me</button>
         </div>
     </div>
-
     <h5 class="seprator">My Skills</h5>
-
-    <div class="skills">
+    <div id="skills" class="skills">
         <div class="left">
             <div class="info">
                 <h3>What My Programming Skills Included?</h3>
@@ -86,9 +82,7 @@
                     effort and time with those technologies.
                 </p>
             </div>
-            <button class="hire-btn">Hire Me</button>
         </div>
-
         <div class="right">
             <div class="item">
                 <i class='bx bxl-html5'></i>
@@ -106,55 +100,41 @@
                 <i class='bx bxl-bootstrap'></i>
             </div>
         </div>
-
     </div>
-
     <footer>
         <div class="start">
             <h3>Start a project</h3>
             <p>Interested in working together? We should queue up a chat. I’ll buy the coffee.</p>
-            <button>Let's do this</button>
+            <a href="contact.html"><button>Let's do this</button></a>
         </div>
-
         <div class="cols">
             <div class="about-col">
-                <h3>AsmrProg.</h3>
-                <p>Creative FullStack Developer</p>
+                <h3>Icejan De Perio.</h3>
+                <p>2nd Year College IT Student</p>
             </div>
-
             <div class="links-col">
                 <h4>Useful Links</h4>
-                <a href="#">Home</a>
-                <a href="#">About</a>
-                <a href="#">Skills</a>
-                <a href="#">Portfolio</a>
-                <a href="#">Contact</a>
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="contact.html">Contact</a>
             </div>
-
             <div class="links-col">
                 <h4>Social Media</h4>
-                <a href="#">Instagram</a>
-                <a href="#">Linkedin</a>
-                <a href="#">Dribble</a>
-                <a href="#">Youtube</a>
-                <a href="#">Github</a>
+                <a href="https://www.instagram.com/shinuzo21/" target="_blank">Instagram</a>
+                <a href="https://www.linkedin.com/in/icejan-de-perio/" target="_blank">Linkedin</a>
+                <a href="https://www.youtube.com/channel/UC2W1cFl0drVa7ctkh02obOg" target="_blank">Youtube</a>
+                <a href="https://github.com/Shinuzo" target="_blank">Github</a>
             </div>
-
             <div class="news-col">
                 <h4>NewsLetter</h4>
                 <p>Enter your email and get notified about news, of.</p>
-
                 <form>
                     <input type="email" placeholder="Your email address">
                     <button><i class='bx bxl-telegram'></i></button>
                 </form>
-
             </div>
-
         </div>
-
     </footer>
-
 </body>
-
 </html>
